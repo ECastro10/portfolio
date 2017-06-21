@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chord Shape Generator</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="../jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="options">
+
+            <select id="root" onchange="updateCurrentChoice()">
+
+                <option value="">Root Note</option>
+                <option value="A">A</option>
+                <option value="A#/Bb">A#/Bb</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#/Db">C#/Db</option>
+                <option value="D">D</option>
+                <option value="D#/Eb">D#/Eb</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#/Gb">F#/Gb</option>
+                <option value="G">G</option>
+                <option value="G#/Ab">G#/Ab</option>
+
+            </select>
+
+            <select id="quality" onchange="updateCurrentChoice()">
+
+                <option value="">Chord Quality</option>
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <option value="diminished">Diminished</option>
+                <option value="augmented">Augmented</option>
+                <option value="sus2">Sus2</option>
+                <option value="sus4">Sus4</option>
+                <option value="major7">Maj7</option>
+                <option value="minor7">Minor7</option>
+                <option value="minor7b5">Minor7b5</option>
+                <option value="dom7">Dominant7</option>
+
+            </select>
+
+            <div>
+                <p id="current_choice">Current Selection</p>
+            </div>
+
+            <button id="generate_button" onclick="findShape()">Find Shape!</button>
+
+        </div>
+
+        <hr width="100%">
+
+        <div id="diagram">
+
+            <div class="marker_row">
+
+                <div class="string_num"></div>
+                <div class="markers">Open</div>
+                <div class="markers"></div>
+                <div class="markers"></div>
+                <div class="markers">III</div>
+                <div class="markers"></div>
+                <div class="markers">V</div>
+                <div class="markers"></div>
+                <div class="markers">VII</div>
+                <div class="markers"></div>
+                <div class="markers">IX</div>
+                <div class="markers"></div>
+                <div class="markers"></div>
+                <div class="markers">XII</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="open_strings">
+
+                <div class="string_num">6</div>
+                <div class="square open_strings six" id="6_0">E</div>
+                <div class="square six" id="6_1">F</div>
+                <div class="square six" id="6_2">F#/Gb</div>
+                <div class="square six" id="6_3">G</div>
+                <div class="square six" id="6_4">G#/Ab</div>
+                <div class="square six" id="6_5">A</div>
+                <div class="square six" id="6_6">A#/Gb</div>
+                <div class="square six" id="6_7">B</div>
+                <div class="square six" id="6_8">C</div>
+                <div class="square six" id="6_9">C#/Db</div>
+                <div class="square six" id="6_10">D</div>
+                <div class="square six" id="6_11">D#/Eb</div>
+                <div class="square six" id="6_12">E</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="one">
+
+                <div class="string_num">5</div>
+                <div class="square open_strings five" id="5_0">A</div>
+                <div class="square five" id="5_1">A#/Bb</div>
+                <div class="square five" id="5_2">B</div>
+                <div class="square five" id="5_3">C</div>
+                <div class="square five" id="5_4">C#/Db</div>
+                <div class="square five" id="5_5">D</div>
+                <div class="square five" id="5_6">D#/Eb</div>
+                <div class="square five" id="5_7">E</div>
+                <div class="square five" id="5_8">F</div>
+                <div class="square five" id="5_9">F#/Gb</div>
+                <div class="square five" id="5_10">G</div>
+                <div class="square five" id="5_11">G#/Ab</div>
+                <div class="square five" id="5_12">A</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="two">
+
+                <div class="string_num">4</div>
+                <div class="square open_strings four" id="4_0">D</div>
+                <div class="square four" id="4_1">D#/Eb</div>
+                <div class="square four" id="4_2">E</div>
+                <div class="square four" id="4_3">F</div>
+                <div class="square four" id="4_4">F#/Gb</div>
+                <div class="square four" id="4_5">G</div>
+                <div class="square four" id="4_6">G#/Ab</div>
+                <div class="square four" id="4_7">A</div>
+                <div class="square four" id="4_8">A#/Bb</div>
+                <div class="square four" id="4_9">B</div>
+                <div class="square four" id="4_10">C</div>
+                <div class="square four" id="4_11">C#/Db</div>
+                <div class="square four" id="4_12">D</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="three">
+
+                <div class="string_num">3</div>
+                <div class="square open_strings three" id="3_0">G</div>
+                <div class="square three" id="3_1">G#/Ab</div>
+                <div class="square three" id="3_2">A</div>
+                <div class="square three" id="3_3">A#/Bb</div>
+                <div class="square three" id="3_4">B</div>
+                <div class="square three" id="3_5">C</div>
+                <div class="square three" id="3_6">C#/Db</div>
+                <div class="square three" id="3_7">D</div>
+                <div class="square three" id="3_8">D#/Eb</div>
+                <div class="square three" id="3_9">E</div>
+                <div class="square three" id="3_10">F</div>
+                <div class="square three" id="3_11">F#/Gb</div>
+                <div class="square three" id="3_12">G</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="four">
+
+                <div class="string_num">2</div>
+                <div class="square open_strings two" id="2_0">B</div>
+                <div class="square two" id="2_1">C</div>
+                <div class="square two" id="2_2">C#/Db</div>
+                <div class="square two" id="2_3">D</div>
+                <div class="square two" id="2_4">D#/Eb</div>
+                <div class="square two" id="2_5">E</div>
+                <div class="square two" id="2_6">F</div>
+                <div class="square two" id="2_7">F#/Gb</div>
+                <div class="square two" id="2_8">G</div>
+                <div class="square two" id="2_9">G#/Ab</div>
+                <div class="square two" id="2_10">A</div>
+                <div class="square two" id="2_11">A#/Bb</div>
+                <div class="square two" id="2_12">B</div>
+
+            </div>
+
+            <div class="make_me_a_row" id="five">
+
+                <div class="string_num">1</div>
+                <div class="square open_strings one" id="1_0">E</div>
+                <div class="square one" id="1_1">F</div>
+                <div class="square one" id="1_2">F#/Gb</div>
+                <div class="square one" id="1_3">G</div>
+                <div class="square one" id="1_4">G#/Ab</div>
+                <div class="square one" id="1_5">A</div>
+                <div class="square one" id="1_6">A#/Bb</div>
+                <div class="square one" id="1_7">B</div>
+                <div class="square one" id="1_8">C</div>
+                <div class="square one" id="1_9">C#/Db</div>
+                <div class="square one" id="1_10">D</div>
+                <div class="square one" id="1_11">D#/Eb</div>
+                <div class="square one" id="1_12">E</div>
+
+            </div>
+
+        </div>
+
+        <div id="two_buttons">
+
+            <button id="previous">Previous</button>
+
+            <button id="next">Next</button>
+
+        </div>
+
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
