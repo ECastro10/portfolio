@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tone Generator</title>
+    <link type="text/css" rel="stylesheet" href="tone_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="greeting">
+        <h1>
+            Welcome to the Tone Generator!
+        </h1>
+        </div>
+
+        <div id="info">
+
+            <p>You can hear 4 kinds of wave types on this page.</p>
+            <ul>
+            <li>Sawtooth</li>
+            <li>Sine</li>
+            <li>Square</li>
+            <li>Triangle</li>
+            </ul>
+            <p>Click on the buttons to hear their respective sounds<br>
+                <b>CAUTION: Some of these sounds are loud so turn your volume down.</b><br>
+            First choose a frequency. Hint: Value must be 10 or above</p>
+        </div>
+        <p id="message_bro">_____________________________</p>
+        <input type="text" id="frequency_number" onKeyUp="sanitizeThis()" placeholder="Frequency in Hertz">
+
+        <div id="generator_area">
+
+            <div class="button_and_image">
+                <h3 class="name">Sawtooth Wave</h3>
+                <br>
+                <img class="nat_size" src="images/SawtoothWave.png">
+                <br>
+                <button class="buttons" onclick="PlaySawtooth()">Turn Sawtooth ON/OFF</button>
+            </div>
+
+            <div class="button_and_image">
+                <h3 class="name">Sine Wave</h3>
+                <br>
+                <img class="nat_size" src="images/SineWave.png">
+                <br>
+                <button class="buttons" onclick="PlaySine()">Turn Sine ON/OFF</button>
+            </div>
+
+            <div class="button_and_image">
+                <h3 class="name">Square Wave</h3>
+                <br>
+                <img class="nat_size" src="images/SquareWave.png">
+                <br>
+                <button class="buttons" onclick="PlaySquare()">Turn Square ON/OFF</button>
+            </div>
+
+            <div class="button_and_image">
+                <h3 class="name">Triangle Wave</h3>
+                <br>
+                <img class="nat_size" src="images/TriangleWave.png">
+                <br>
+                <button class="buttons" onclick="PlayTriangle()">Turn Triangle ON/OFF</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="tone_scripts.js"></script>
+
+</html>
