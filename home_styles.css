@@ -77,3 +77,20 @@ h1{
     overflow: hidden;
     margin-top: 5vh;
 }
+
+#sensor_image{
+    max-height: 27vh;
+    max-width: 23vw;
+}
+
+.image_changer{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}

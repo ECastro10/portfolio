@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>BlueMeister</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="home_scripts.js"></script>
     <link type="text/css" rel="stylesheet" href="home_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
@@ -22,9 +24,9 @@
                 <h1>Welcome!</h1>
 
                 <p>
-                    My name is Emanuel I am currently a server at a retirement community looking to transition<br>
+                    My name is Emanuel, I am currently a server at a retirement community looking to transition<br>
                     into the tech industry. <br><br>
-                    Who is the <b>doggo</b>? That is <b>Blue</b>, my faithful husky/blue heeler companion.<br><br>
+                    Who is the <b>doggo</b>? She is <b>Blue</b>, my faithful husky/blue heeler companion.<br><br>
                     Besides programming, I enjoy learning/playing the guitar, listening<br>
                     to music, watching Star Trek, playing with the pets, and just letting my curiosity lead me to<br>
                     new concepts or ideas. <br><br>Below is some of my work, in <b>bold are the tools used</b>, and underneath is the github link.
@@ -91,9 +93,38 @@
 
                 <h3><a href="tone_generator/tone_home.html">Tone Generator</a></h3>
                 <a href="tone_generator/tone_home.html"><img class="nat_size" src="tone_generator/tone_generator_preview.png"></a>
-                <p>Listen 4 different kinds of sound wave shapes in your desired number of Hertz.<br>
+                <p>Listen to 4 different kinds of sound wave shapes in your desired number of Hertz.<br>
                 <b>HTML, CSS, Flexbox, Javascript, jQuery, Mozilla Web Audio API</b><br>
                 <a href="https://github.com/ECastro10/tone-generator">Tone Generator repo</a></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3>Particulate Matter Data Logger (Prototype / Current Project)</h3>
+                <div class="image_changer">
+                    <button onclick="prevImage()"><-</button>
+                    <img id="sensor_image" class="nat_size" src="PM_sensor/prototype_full.jpg">
+                    <button onclick="nextImage()">-></button>
+                </div>
+                <p>Created at PNCA's "Sensing the environment" hackathon. This is only the beginning.<br>
+                    Our team created this prototype and the housing.<br>
+                    A prototype for a Particulate Matter Sensor that logs readings every second<br>
+                <b>Teensyduino 3.2, Teensyduino Audio Shield, RTC module, AA battery deck,<br>
+                PMS Plantower 5003, C++, Electrical Engineering</b></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3>Free Geek Scheduler (current project)</h3>
+                <img class="nat_size" src="Free%20Geek/fg_home_01.png">
+                <p>Currently working on Free Geek's scheduler with our Free Geek group<br>
+                from the Code For Good conference. I connected the app to REST API,<br>
+                created serializers, viewsets, routers, profile page, login, logout,
+                registration pages, and connected to the old home page to find functionality.<br>
+                <b>Django, Postgres, Python, REST API, HTML, CSS(Flexbox), Javascript(jQuery)</b><br>
+                    <a href="https://github.com/ECastro10/free-geek">My Fork Repo</a></p>
 
             </div>
 
@@ -121,9 +152,11 @@
                 Some Java Experience<br>
                 Socketing into Amazon AWS instances and using them<br>
                 API's - Google Maps, Trimet, REST, Mozilla Web Audio,<br>Amazon Rekognition, IBM Watson Visual Recognition<br>
+                Some C++<br>
+                Microcontrollers - Teensyduino, Arduino Genuino,<br>and Raspberry Pi<br>
             </p>
 
-            <p>For more projects, checkout my <a href="https://github.com/ECastro10/">my Github</a><br>
+            <p>For more projects, checkout <a href="https://github.com/ECastro10/">my Github</a><br>
             Any questions, comments, or concerns? My email is on my Github repo, just shoot me an email.</p>
 
             </div>
