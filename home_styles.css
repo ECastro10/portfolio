@@ -54,7 +54,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 80vh;
+    max-height: 200vh;
     max-width: 25vw;
     padding: 0 3vw;
 }
@@ -67,6 +67,7 @@ h1{
 #outro{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 #doggo_three{
