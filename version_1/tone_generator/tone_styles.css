@@ -1,0 +1,59 @@
+#wrapper{
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nat_size{
+    height: 100%;
+    width: 100%;
+}
+
+#info{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+#generator_area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+#content{
+    flex-direction: row;
+}
+
+.name{
+    padding: 3vh 0 0 0;
+    margin: 0;
+}
+
+
+.button_and_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 30vh;
+    max-width: 30vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#message_bro{
+    padding: 0;
+    margin: 0;
+    color: greenyellow;
+}

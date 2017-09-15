@@ -1,0 +1,173 @@
+w<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlueMeister</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="home_scripts.js"></script>
+    <link type="text/css" rel="stylesheet" href="home_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="intro">
+
+            <div id="d_one" class="doggo_intro">
+
+                <img class="nat_size" src="awareDoggo.PNG">
+
+            </div>
+
+            <div id="intro_text">
+
+                <h1>Welcome!</h1>
+
+                <p>
+                    My name is Emanuel, I am currently a server at a retirement community looking to transition<br>
+                    into the tech industry. <br><br>
+                    Who is the <b>doggo</b>? She is <b>Blue</b>, my faithful husky/blue heeler companion.<br><br>
+                    Besides programming, I enjoy learning/playing the guitar, listening<br>
+                    to music, watching Star Trek, playing with the pets, and just letting my curiosity lead me to<br>
+                    new concepts or ideas. <br><br>Below is some of my work, in <b>bold are the tools used</b>, and underneath is the github link.<br>
+                    Click on the image or titles to see the project. NOTE: Not all projects have links.
+                </p>
+
+            </div>
+
+            <div id="d_two" class="doggo_intro">
+
+                <img class="nat_size" src="relaxedDoggo.PNG">
+
+            </div>
+
+        </div>
+
+        <hr width="100%">
+
+        <div id="projects">
+
+            <div class="name_and_info">
+                <h3><a href="tile_color_trailer/tile_trailer_index.html">Tile Color Trailer</a></h3>
+                <a href="tile_color_trailer/tile_trailer_index.html"><img class="nat_size" src="tile_color_trailer/tile_color_trailer_preview.png"></a>
+                <p>Populates the screen with tiles, when you hover over a tile, it chooses a true random color
+                and it changes back to white after a half second.<br>
+                <b>HTML, CSS, Flexbox, Javascript, jQuery, Django</b><br>
+                <a href="https://github.com/ECastro10/Tile_Color_Trail">Tile Color Trailer repo</a>
+                </p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3><a href="shuffler/shuffler.html">Shuffler</a></h3>
+                <a href="shuffler/shuffler.html"><img class="nat_size" src="shuffler/shuffler_preview.png"></a>
+                <p>Add items into a list, then shuffle them however many times you want.<br>
+                <b>HTML, CSS, Flexbox Javascript, jQuery, Django</b><br>
+                <a href="https://github.com/ECastro10/shuffler">Shuffler's repo</a></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3><a href="chord_shape_generator/chord_shape_generator.html">Chord Shape Generator</a></h3>
+                <a href="chord_shape_generator/chord_shape_generator.html"><img class="nat_size" src="chord_shape_generator/chord_shape_generator_preview.png"></a>
+                <p>Choose a root note, a chord quality, then click on find shape! You can then see other shapes with the next or previous buttons.<br>
+                <b>HTML, CSS, Flexbox, Javascript, jQuery</b><br>
+                <a href="https://github.com/ECastro10/chord_shape_generator">Chord Shape Generator repo</a></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3><a href="http://ai.collexion.com/home.html">Collexion's Visual Recognition Demo</a></h3>
+                <a href="http://ai.collexion.com/home.html"><img class="nat_size" src="collexion_demo_preview.png"></a>
+                <p>Plug in an image to find out what it is with IBM Watson Visual Recognition.<br>
+                Was intended for the following:<br>Baseball cards (1968, 1969, specifically Hank Aaron, and Mickey Mantle),
+                Typewriters (Royal and Underwood), Vinyl Album Covers (Elvis Presley and the Beatles)<br>
+                <b>HTML, CSS, Flexbox, Javascript, jQuery, Python, IBM Watson Visual Recognition, AJAX calls</b><br>
+                <a href="https://github.com/ECastro10/Collexion-Inc-AI-Demo">Collexion's Demo repo</a></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3><a href="tone_generator/tone_home.html">Tone Generator</a></h3>
+                <a href="tone_generator/tone_home.html"><img class="nat_size" src="tone_generator/tone_generator_preview.png"></a>
+                <p>Listen to 4 different kinds of sound wave shapes in your desired number of Hertz.<br>
+                <b>HTML, CSS, Flexbox, Javascript, jQuery, Mozilla Web Audio API</b><br>
+                <a href="https://github.com/ECastro10/tone-generator">Tone Generator repo</a></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3>Particulate Matter Data Logger (Prototype / Current Project)</h3>
+                <div class="image_changer">
+                    <button onclick="prevImage()"><-</button>
+                    <img id="sensor_image" class="nat_size" src="PM_sensor/prototype_full.jpg">
+                    <button onclick="nextImage()">-></button>
+                </div>
+                <p>Created at PNCA's "Sensing the environment" hackathon. This is only the beginning.<br>
+                    Our team created this prototype and the housing.<br>
+                    A prototype for a Particulate Matter Sensor that logs readings every second<br>
+                <b>Teensyduino 3.2, Teensyduino Audio Shield, RTC module, AA battery deck,<br>
+                PMS Plantower 5003, C++, Electrical Engineering</b></p>
+
+            </div>
+
+            <div class="name_and_info">
+
+                <h3>Free Geek Scheduler (current project)</h3>
+                <img class="nat_size" src="Free%20Geek/fg_home_01.png">
+                <p>Currently working on Free Geek's scheduler with our Free Geek group<br>
+                from the Code For Good conference. I connected the app to REST API,<br>
+                created serializers, viewsets, routers, profile page, login, logout,
+                registration pages, and connected to the old home page to find functionality.<br>
+                <b>Django, Postgres, Python, REST API, HTML, CSS(Flexbox), Javascript(jQuery)</b><br>
+                    <a href="https://github.com/ECastro10/free-geek">My Fork Repo</a></p>
+
+            </div>
+
+        </div>
+
+        <hr width="100%">
+
+        <div id="outro">
+
+            <div id="final_remarks">
+
+            <p>
+                <b>Technical Skills:</b><br>
+                Python (Functional and Object-Oriented Programming (OOP))<br>
+                HTML<br>
+                CSS<br>
+                Regex<br>
+                Javascript<br>
+                jQuery<br>
+                AJAX calls<br>
+                Django Framework<br>
+                Command Lines (Powershell, Bash, Cygwin)<br>
+                Version Control<br>
+                Windows and Linux (Ubuntu) Environments<br>
+                Some Java Experience<br>
+                Socketing into Amazon AWS instances and using them<br>
+                API's - Google Maps, Trimet, REST, Mozilla Web Audio,<br>Amazon Rekognition, IBM Watson Visual Recognition<br>
+                Some C++<br>
+                Microcontrollers - Teensyduino, Arduino Genuino,<br>and Raspberry Pi<br>
+            </p>
+
+            <p>For more projects, checkout <a href="https://github.com/ECastro10/">my Github</a><br>
+            Any questions, comments, or concerns? My email is on my Github repo, just shoot me an email.</p>
+
+            </div>
+
+            <div id="doggo_three">
+                <img class="nat_size" src="explorerDoggo.PNG">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
