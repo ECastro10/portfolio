@@ -2569,6 +2569,7 @@
 				-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 				transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 				font-size: 1rem;
+
 			}
 
 		ul.actions {
@@ -3129,7 +3130,7 @@
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6, #intro p {
-			color: #0000ff;
+			color: #ffffff;
 		}
 
 		#intro blockquote {
@@ -3231,6 +3232,7 @@
 				transform: translateY(0);
 				opacity: 1;
 				visibility: visible;
+				color: #f0d300;
 			}
 
 		body.is-loading #intro {
@@ -3370,7 +3372,7 @@
 			-ms-pointer-events: auto;
 			pointer-events: auto;
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: #f0d300;
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
@@ -3380,6 +3382,7 @@
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+			color: #f0d300;
 		}
 
 			#header .logo:hover {
@@ -3412,7 +3415,7 @@
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: #18bfef;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3454,7 +3457,7 @@
 		}
 
 		#nav a {
-			color: #ffffff;
+			color: #f0d300;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
@@ -3520,6 +3523,7 @@
 					font-size: 0.8rem;
 					outline: none;
 					padding: 0 2rem;
+					color: #f0d300;
 				}
 
 					#nav ul.links li a:hover {
@@ -3532,7 +3536,7 @@
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #f0d300;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -4058,7 +4062,8 @@
 						-webkit-flex-grow: 0;
 						-ms-flex-grow: 0;
 						flex-grow: 0;
-						width: 6rem;
+						width: 30%;
+						text-align: left;
 					}
 
 					#footer > section.split.contact > section > :last-child {
@@ -4070,6 +4075,8 @@
 						-webkit-flex-grow: 1;
 						-ms-flex-grow: 1;
 						flex-grow: 1;
+						text-align: left;
+						padding-left: 2rem;
 					}
 
 					#footer > section.split.contact > section:first-child {
@@ -4297,7 +4304,7 @@
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #ffffff;
+		color: #f0d300;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9rem;
 		font-weight: 900;
