@@ -25,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fightstick.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fightstick.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fightstick.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="71" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="58" column="116" lean-forward="false" selection-start-line="58" selection-start-column="116" selection-end-line="58" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -57,11 +57,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/images/sensor.html" />
         <option value="$PROJECT_DIR$/sensor.html" />
         <option value="$PROJECT_DIR$/current_projects.html" />
         <option value="$PROJECT_DIR$/fightstick.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -402,14 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="71" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/CAM00292.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -455,6 +447,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="108" column="104" lean-forward="false" selection-start-line="108" selection-start-column="104" selection-end-line="108" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="58" column="116" lean-forward="false" selection-start-line="58" selection-start-column="116" selection-end-line="58" selection-end-column="116" />
           <folding />
         </state>
       </provider>
