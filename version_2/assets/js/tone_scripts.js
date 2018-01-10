@@ -42,7 +42,6 @@ function PlaySine() {
 
     } else {
         sine_node.stop();
-        note_context.close();
         SinePlaying = false;
     }
 
@@ -65,7 +64,6 @@ function PlaySawtooth(){
 
     } else {
         sawtooth_node.stop();
-        note_context.close();
         SawtoothPlaying = false;
     }
 
@@ -88,7 +86,6 @@ function PlaySquare(){
 
     } else {
         square_node.stop();
-        note_context.close();
         SquarePlaying = false;
     }
 
@@ -111,7 +108,6 @@ function PlayTriangle(){
 
     } else {
         triangle_node.stop();
-        note_context.close();
         TrianglePlaying = false;
     }
 

@@ -1,4 +1,7 @@
-#wrapper{
+#chord_shape_wrapper{
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -12,6 +15,14 @@
     margin: 10px 20px 10px 10px;
 }
 
+h3{
+    margin-top: 0;
+}
+
+.option_container{
+    flex-direction: column;
+}
+
 #root{
     position: static;
 }
@@ -21,13 +32,19 @@
 }
 
 #current_choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 10em;
+    min-height: 5em;
+    color: #ff0000;
+    font-weight: 900;
+    font-size: 1.2em;
 }
 
 #diagram{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 50vh;
     min-width: 100vh;
@@ -36,6 +53,7 @@
 #two_buttons{
     display: flex;
     justify-content: flex-end;
+    padding-right: 18%;
 }
 
 .square{
@@ -77,3 +95,29 @@
     width: 17px;
     align-items: center;
 }
+
+.hide-me{
+    display: none;
+}
+
+.gradient_bar {
+    max-width: 98.8vw;
+    min-height: 1em;
+    background: linear-gradient(
+        135deg,
+        #3d0000 0%,
+        #4d0000 15%,
+        #5d0000 15%,
+        #6d0000 20%,
+        #7d0000 20%,
+        #8d0000 42%,
+        #9d0000 42%,
+        #ad0000 66%,
+        #bd0000 66%,
+        #cd0000 72%,
+        #dd0000 72%,
+        #ed0000 86%,
+        #f70000 86%,
+        #ff0000 100%);
+}
+
